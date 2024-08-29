@@ -1,12 +1,18 @@
+package org.example;
+
 /**
- * class car that extends Vehicle
+ * class car that extends org.example.Vehicle
  */
-public class Car extends Vehicle{
+public class Car extends Vehicle {
+    //data member
     private String brand;
 
+    //default constructor
     public Car() {}
 
+    //constructor with parameters
     public Car(int numberofWheels, String color, float engineSize, String fuelType, String brand) {
+        //call to parent constructor in Vehicale class
         super ( numberofWheels, color, engineSize, fuelType);
         this.brand = brand;
     }
@@ -36,7 +42,7 @@ public class Car extends Vehicle{
 
     /**
      * method displays all attributes of the car object
-     * included those inherited from Vehicle class
+     * included those inherited from org.example.Vehicle class
      */
     public void displayInfo() {
         System.out.println("the car has these specific specs...");
